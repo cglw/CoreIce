@@ -1,0 +1,2 @@
+# CoreIce
+init
