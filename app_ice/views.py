@@ -5,6 +5,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from Ice import MongoOperator
+
 
 def index(request):
     return render(request, "home.html")
@@ -19,4 +21,5 @@ def add(request):
 
 def add2(request, a, b):
     c = int(a) + int(b)
+    print(MongoOperator.MongoOperator.db)
     return HttpResponse(str(c))
